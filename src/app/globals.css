@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about-image::before,
+.about-image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 70%;
+    background-color: #04233b;
+}
+
+.about-image::before {
+    left: 0;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.about-image::after {
+    right: 0;
+    z-index: 0;
+    transform: translate(50%, -50%);
+}
